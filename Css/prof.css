@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #24252A;;
+    font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
+}
+#navLogo{
+    color: aqua;
+    cursor: pointer;
+    font-size: 2rem;
+    padding: 0 60px;
+    
+}
+li, a, button{
+    
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10px;
+    
+}
+.navLinks{
+    list-style: none;
+}
+ 
+.navLinks li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+.navLinks li a{
+    transition: all 0.3s ease;
+}
+.navLinks li a:hover{
+    color: aqua;
+}
+button{
+    padding: 10px 25px;
+    background-color: rgba(0,136,169,1);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+button:hover{
+    background-color: rgba(0,136,169,0.8);
+}
+
+.contactme{
+    padding: 0 60px;
+}
+
+.title h1 {
+  color:#edf0f1;
+  font-size: 2.7rem;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  text-align: center;
+  margin-bottom: -30px;
+}
+section{
+  padding: 20px 100px;
+}
+
+.home{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image{
+  position: relative;
+  width: 45%;
+  min-height: 450px;
+}
+
+.image img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.info{
+  position: relative;
+  width: 52%;
+  color:#edf0f1;
+}
+.borac-info{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info h2{
+  font-size: 2em;
+  font-weight: 800;
+}
+
+.info p{
+  font-size: 1em;
+  text-align: justify;
+  margin-top: 10px;
+}
+.myname{
+    color: #FAC213;
+}
+#info-span{
+    color: #F77E21;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    
+}
+.container .row{
+    width: 100%;
+    margin: auto;
+}
+.container .row .heading-section{
+    width: 60%;
+    text-align: center;
+    margin: auto;
+}
+
+.container .row .heading-section h1{
+   padding-top: 30px;
+   font-size: 42px;
+}
+.container .row .heading-section span{
+    color: #ff0000;
+ }
+ .content-section{
+     display: flex;
+     justify-content: center;
+     align-items: stretch;
+     margin: auto;
+ }
+.pics{
+     flex: 1;
+     margin: 40px 20px;
+     transition: 1s;
+ }
+ .pics:hover{
+     transform:scale(1.2);
+     z-index: 2;
+ }
+ .content-section img{
+     width: 100%;
+     height: auto;
+ }
+ .content-section .pics h4{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: #37E2D5;
+     font-size: 30px;
+     margin-top: 20px;
+
+ }
+ .content-section .pics p{
+     font-size: 15px;
+    margin-top: 20px;
+    color: #FFF;
+    line-height: 1.5;
+}
+
+.section-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-container .columns {
+  flex: 0 0 auto;
+  width: 50%;
+}
+.columns.image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+ .content-container {
+  padding: 40px 50px;
+}
+.camp-name{    /* DITO NAG START ANG CODE PARA SA MGA SPAN SA EDUC-SECTION*/
+  color: #37E2D5;
+}
+.sdssu{
+  color: #FBCB0A;
+}
+.sd-tracker{   /* DITO NA TAPOS ANG SPAN CLASES CODE */
+  color: #2EB086;
+}
+
+ .content-container h5 {
+  color: #edf0f1;
+  font-weight: 700;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.content-container p {
+  color: #FFF;
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 20px;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+.goupbtn{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: #FF008E;
+  bottom: 50px;
+  right: 40px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+  font-size: 22px;
+}
+.footer-bot{
+  background: #97BFB4;
+  text-align: center;
+  width: 100%;
+  padding: 20px 0;
+}
+.footer-bot p{
+  background: #97BFB4;
+}
+.footer-bot span{
+  text-transform: uppercase;
+  background: #97BFB4;
+  color: #990000;
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+@media screen and (max-width:767px) {  /* ITO NAMAN ANG CODE PARA SA RESPONSIVE NG EDUCATION-SEC */
+  .section-container {
+    flex-flow: row wrap;
+  }
+
+  .columns.image {
+    display: block;
+    order: 1;
+    width: 100%;
+    height: 250px;
+  }
+
+   .columns.content {
+    display: block;
+    order: 2;
+    width: 100%;
+  }
+
+  .content-container {
+    padding: 20px 35px;
+  }
+
+  .content-container h5 { /* DITO NAMAN NA TAPOS ANG CODE SA REPONSIVE */
+    margin-bottom: 5px;
+  }
+}
+.row-content {
+  display: flex;
+  justify-content: space-between;
+  width: 88%;
+  align-items: center;
+  margin: auto;
+} 
+.process .row-content {
+  justify-content: center;
+}
+.row-content h1{
+  margin-top: 50px;
+  color: #FAC213;
+}
+.process-content {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.progress-bar {
+  width: 88%;
+  height: 2px;
+  background-color: #fff;
+  margin: auto;
+  position: relative;
+}
+
+.progress-bar .c1,
+.progress-bar .c2,
+.progress-bar .c3 {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #FAC213;
+  position: absolute;
+}
+
+.progress-bar .c1 {
+  top: -8px;
+  left: 50px;
+}
+
+.progress-bar .c2 {
+  top: -8px;
+  left: 50%;
+}
+
+.progress-bar .c3 {
+  top: -8px;
+  right: 50px;
+}
+
+.box1,
+.box2,
+.box3 {
+  padding: 1.8rem;
+}
+
+.process .box2 {
+  text-align: center;
+  margin-right: 25px;
+}
+
+.process .box3 {
+  text-align: right;  
+}
+
+.process-content h2 {
+  color: #4CAF50;
+}
+.process-content p {
+  color: #fff;
+}
+
+
+@media screen and (max-width: 768px){ 
+    .content-section{
+        flex-direction: column;
+    }
+    #navLogo{
+      margin-left: 0;
+      padding-left: 0;
+    }
+   
+    header .contactme{
+      margin-right: 0;
+      padding-right: 0;
+      padding-left: 0;
+    }
+    /* this is for the responsive of my hobbies */
+    
+    .progress-bar{
+      display: none;
+  }
+  .process-content{
+      margin-top: 20px;
+  }
+  .process .box1,
+  .process .box2,
+  .process .box3{
+      text-align: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 990px){
+  section{
+    padding: 50px 30px;
+  }
+
+  .home{
+    display: block;
+  }
+  .borac-info{
+    display: block;
+  }
+
+  .image{
+    width: 100%;
+  }
+
+  .info{
+    width: 100%;
+    margin-top: 15px;
+  }
+}

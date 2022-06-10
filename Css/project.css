@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+/* Base Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+p {
+	color: black;
+	font-size: 1.4rem;
+	margin-top: 5px;
+	line-height: 2.5rem;
+	font-weight: 300;
+	letter-spacing: 0.05rem;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: whitesmoke;
+}
+
+
+
+h1 {
+    font-weight: 800;
+    font-size: 3.6rem;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 2.4rem;
+}
+
+p {
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+    margin: auto;
+}
+
+section {
+    padding: 100px 0;
+}
+
+
+
+/* Hero Section */
+header {
+    height: 100vh;
+    width: 100%;
+    background: #E6DADA;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #274046, #E6DADA);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #274046, #E6DADA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: whitesmoke;
+}
+
+.logo h1 {
+    font-size: 3.2rem;
+    color:  #e6dada;
+    margin: 20px 50px 50px 50px;
+}
+
+.header-content {
+    width: 50%;
+    position: relative;
+    top: 16%;
+    left: 8%;
+}
+.header-content h1{
+    font-size: 50px;
+}
+.header-content span {
+    display: block;
+    color: #00FFAB;
+    font-size: 1.8rem;
+
+}
+
+
+/* About Section */
+.about{
+    background: #C9FFBF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFAFBD, #C9FFBF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFAFBD, #C9FFBF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.about-left,
+.about-middle,
+.about-right {
+    flex-basis: 30%;
+    padding: 1.6rem;
+}
+.about-middle h2{
+    color: #4B5D67;
+    font-weight: bold;
+}
+.about-right h2{
+    color: #4B5D67;
+    font-weight: bold;
+}
+.btn {
+    background-color: #FF5B00;
+    color: #fff;
+    padding: 8px 16px;
+    display: inline-block;
+    margin: 2rem 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+
+.section-title {
+	font-size: 4rem;
+	font-weight: 300;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+	text-align: center;
+}
+.section-title span {
+	color: #990000;
+    font-size: 60px;
+    margin-top: 30px;
+}
+
+
+
+/* Projects section */
+#projects{
+    background: #616161;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #9bc5c3, #616161);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #9bc5c3, #616161); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+.projects {
+	flex-direction: column;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 100px 0;
+}
+.projects-header h1 {
+	margin-bottom: 50px;
+}
+ .all-projects {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.project-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 80%;
+	margin: 20px auto;
+	overflow: hidden;
+	border-radius: 10px;
+}
+#projects .project-info {
+	padding: 30px;
+	flex-basis: 50%;
+	height: 100%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+    background: #F0C27B;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4B1248, #F0C27B);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4B1248, #F0C27B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    color: white;
+}
+#projects .project-info h1 {
+	font-size: 4rem;
+	font-weight: 500;
+}
+#projects .project-info h2 {
+	font-size: 1.8rem;
+	font-weight: 500;
+	margin-top: 10px;
+}
+#projects .project-info  span{
+    color: #00FFAB;
+    font-size: 1.8rem;
+	font-weight: 500;
+	margin-top: 10px;
+}
+#projects .project-info p {
+	color: white;
+}
+#projects .project-img {
+	flex-basis: 50%;
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+}
+#projects .project-img:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	opacity: 0.6;
+}
+#projects .project-img img {
+	transition: 0.3s ease transform;
+}
+#projects .project-item:hover .project-img img {
+	transform: scale(1.1);
+}
+/* End Projects section */
+
+
+/* for tablet responsive */
+@media only screen and (min-width: 768px) {
+	
+
+	h1.section-title {
+		font-size: 6rem;
+	}
+	/* Project */
+	#projects .project-item {
+		flex-direction: row;
+	}
+	#projects .project-item:nth-child(even) {
+		flex-direction: row-reverse;
+	}
+	#projects .project-item {
+		height: 400px;
+		margin: 0;
+		width: 100%;
+		border-radius: 0;
+	}
+	#projects .all-projects .project-info {
+		height: 100%;
+	}
+	#projects .all-projects .project-img {
+		height: 100%;
+	}
+
+	/* End Project */
+
+}
+/*  other project section */
+.fav-channel {
+    background-color: #222;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+.channel-cont {
+    background: white;
+    width: 400px;
+    height: 450px;
+    margin: 10px;
+    
+}
+.pic{
+    height: 250px;
+    margin-bottom: 15px;
+    background-size: cover;
+}
+
+.pic-1{
+    background-image: url('../project-img/freeccodecamp.jpg');
+    width: 100%;
+}
+.pic-2{
+    background-image: url('../project-img/webdev.jpg');
+    width: 100%;
+}
+.pic-3{
+    background-image: url('../project-img/kev.jpg');
+    width: 100%;
+}
+.channel-cont h2{
+    text-align: center;
+    color: #590696;
+}
+.channel-cont p{
+    margin: 10px;
+}
+
+.pic-btn{
+    background-color: #FF5B00;
+    color: #fff;
+    padding: 8px 16px;
+   display: block;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; 
+    text-transform: uppercase;
+    text-align: center;
+    margin: 10px 130px;
+}
+
+
+
+
+/* Process Section */
+.process .row {
+    justify-content: center;
+}
+
+.process-content {
+    margin-top: 100px;
+}
+
+.progress-bar {
+    width: 80%;
+}
+
+
+
+
+
+/* Media Queries */
+
+@media only screen and (max-width:768px) {
+
+    .row{
+        flex-direction: column;
+    }
+    .project{
+        flex-direction: column;
+        align-items: center;
+    }
+   
+    /* header content */
+    .header-content{
+        width: 100%;
+        top:16%;
+        left:0;
+        text-align: center;
+        padding:0 8px;
+    }
+    .web-img{
+        display: none;
+    }
+    
+    .progress-bar{
+        display: none;
+    }
+    .process-content{
+        margin-top: 20px;
+    }
+    .process .box1,
+    .process .box2,
+    .process .box3{
+        text-align: center;
+    }
+
+    /* Testimony */
+    .testimony .test{
+        margin:1.6rem 0;
+    }
+
+    .contact form input,
+    .contact textarea{
+        width: 100%;
+    }
+}

@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+     font-family: "Poppins", sans-serif;
+
+}
+.popup-screen{
+  z-index: 999999;
+  position: fixed;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  transition: 0.5s ease;
+  transition-property: visibility;
+}
+
+.popup-screen.active{
+  visibility: visible;
+}
+
+.popup-box{
+  position: relative;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  max-width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
+  padding: 50px 40px;
+  border-radius: 20px;
+  box-shadow: 0 5px 25px rgb(0 0 0 / 20%);
+  transform: scale(0);
+  transition: 0.5s ease;
+  transition-property: transform;
+}
+
+.popup-screen.active .popup-box{
+  transform: scale(1);
+}
+
+.popup-box h2{
+  font-size: 2.1em;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.popup-box p{
+  font-size: 1em;
+  margin-bottom: 30px;
+}
+
+.popup-box .btn{
+  color: #fff;
+  background: #FF0000;
+  font-size: 1.1em;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 7px 27px;
+  border-radius: 3px;
+}
+
+.close-btn{
+  position: absolute;
+  font-size: 1em;
+  top: 0;
+  right: 0;
+  margin: 15px;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: 0.3s ease;
+  transition-property: opacity;
+}
+
+.close-btn:hover{
+  opacity: 1;
+}
+nav{
+    background:#180A0A;
+    height: 80px;
+    width: 100%;
+  }
+   label.logo{     /* thise codes contains gradient colors from uigradient.com */
+    background: #1E9600; 
+    background: -webkit-linear-gradient(to right, #FF0000, #FFF200, #1E9600);  
+    background: linear-gradient(to right, #FF0000, #FFF200, #1E9600); 
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;  
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+  }
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 10px;
+  }
+  nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+  a.active,a:hover{      /* don't remove the a because it will damage the pop up message */
+    background: #1b9bff;
+    transition: .5s;
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  /* this is the responsive code for navigation bar */
+  @media (max-width: 952px){
+    label.logo{
+      font-size: 30px;
+      padding-left: 10px;
+      padding-right: 0;
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 858px){
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    a:hover,a.active{
+      
+      margin-left: 0;
+      padding-left: 0;
+      background: none;
+      color: #1E9600;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+  }
+   /* this is the responsive code for navigation bar */
+
+
+
+.container{                 /*this is the code for SOME OF MY PROJECTS */
+    width: 100%;
+    min-height: 100vh;
+    background-color: #F7E2E2;
+    
+}
+.container .row{
+    width: 85%;
+    margin: auto;
+}
+.container .row .heading-section{
+    width: 60%;
+    text-align: center;
+    margin: auto;
+}
+
+.container .row .heading-section h1{
+   padding-top: 30px;
+   font-size: 42px;
+}
+.container .row .heading-section span{
+    color: #ff0000;
+ }
+.container .row .heading-section p{
+    margin-top: 15px;
+    color: #3d3d3d;
+    font-size: 17px;
+    line-height: 1.5;
+ }
+ .content-section{
+     display: flex;
+     justify-content: center;
+     align-items: stretch;
+     margin: auto;
+ }
+.pics{
+     flex: 1;
+     margin: 40px 20px;
+ }
+ .link{
+   color: #ff0000;
+ }
+ 
+ .content-section img{
+     width: 100%;
+     height: auto;
+ }
+ .content-section .pics h4{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 30px;
+     margin-top: 20px;
+
+ }
+ .content-section .pics p{    /*UNTIL HERE*/
+    font-weight: 500;
+     font-size: 15px;
+    margin-top: 20px;
+    color: #3d3d3d;
+    line-height: 1.5;
+}
+* footer{       /* CODE FOR THE FOOTER*/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+
+}
+footer { 
+   
+    background-color: #111;
+    height: auto;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 40px;
+    color: #fff;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-container h2{
+    font-size: 1.7rem;
+    line-height: 2rem;
+    font-weight: 400;
+}
+.footer-container p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    margin: 0;
+}
+.socmed-links{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0 3rem 0;
+}
+.socmed-links li{
+    margin: 0 12px;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.socmed-links a i{
+    font-size: 2rem;
+}
+.socmed-links a:hover i{
+    color: aqua;
+}
+.footer-bot{
+    background: #000;
+    text-align: center;
+    width: 100%;
+    padding: 20px 0;
+}
+.footer-bot span{
+    text-transform: uppercase;
+    color: aqua
+
+}
+/* code for responsive mobile basta mao nani para dile yagit tan awon sa cp*/
+@media screen and (max-width: 768px){
+    .content-section{
+        flex-direction: column;
+    }
+}
+@media (max-width: 800px) {
+   body{
+       width: 500px;
+   }
+  } 
